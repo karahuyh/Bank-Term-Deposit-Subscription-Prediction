@@ -13,7 +13,7 @@
 </div>
 
 ## 💻 Project Overview
-A machine learning project that predicts whether a customer will subscribe to a term deposit during a direct marketing campaign. The project applies the **CRISP-DM methodology**, advanced data preprocessing, imbalance handling techniques, and multiple classification algorithms to optimise marketing performance while minimising business costs.
+This machine learning project aims to predict customer subscriptions to term deposits in a Portuguese bank’s marketing campaign during the period of 2008-2010. The project applies the **CRISP-DM methodology**, imbalance handling techniques, and four classification models to optimise marketing performance while minimising business costs.
 
 ## 🔧 Business Problem
 Banks invest significant resources into telemarketing campaigns, but only a small percentage of customers subscribe to term deposits.
@@ -24,6 +24,26 @@ This project aims to:
 - Reduce unnecessary marketing costs
 - Improve campaign targeting
 - Minimise missed revenue opportunities through cost-sensitive modelling
+
+
+## 🔧 Business Problem
+a) Customer Segmentation
+- Which demographic factors (age, job, marital status, education) and financial indicators
+(balance, default, housing, loan) most strongly predict subscription likelihood?
+- Which customer profiles combine high conversion potential with manageable risk?
+
+b) Resource Optimization
+- How should marketing budgets and contacts be allocated across segments and channels
+(cellular vs. telephone) to maximize ROI?
+- Which customer groups offer the highest return per contact or marketing dollar?
+
+c) Campaign Timing and Contact Strategy
+- How do timing variables (day of week, economic conditions) influence response rates?
+- What is the optimal contact frequency to maximize conversions without causing fatigue?
+
+d) Reach–Precision Balance
+- What is the ideal trade-off between broad campaign reach and targeted precision to sustain customer trust and maximize long-term value?
+
 
 ## 📊 Dataset
 
