@@ -34,6 +34,9 @@ This project aims to:
 - **Problem Type:** Binary Classification
 - **Class Distribution:** Highly imbalanced (~11% positive class)
 
+Data Wrangling and Cleaning
+- Converted 
+
 ## Models Implemented
 Five machine learning models:
 - Decision Tree
@@ -41,4 +44,5 @@ Five machine learning models:
 - Support Vector Machine (SVM)
 - k-Nearest Neighbours (kNN)
 - Artificial Neural Network (ANN)
+
 
