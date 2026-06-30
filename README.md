@@ -15,18 +15,26 @@
 ## 💻 Project Overview
 This machine learning project aims to predict customer subscriptions to term deposits in a Portuguese bank’s marketing campaign during the period of 2008-2010. The project applies the **CRISP-DM methodology**, imbalance handling techniques, and four classification models to optimise marketing performance while minimising business costs.
 
-## 🔧 Business Problem
-Banks invest significant resources into telemarketing campaigns, but only a small percentage of customers subscribe to term deposits.
+## 🔧 Business Context and Strategic Importance
+Term deposits are a key source of stable funding of banks, supporting liquidity, lending and profitability. During the  2008-2019 global financial crisis and eurozone debt crisis, Portuguese banks relied heavily on attracting long-term deposits to strengthen financial stability and meet increased capital requirements. 
 
+## 💼 Business Value of Predictive Modeling
+Predictive modeling improves the efficiency of term deposit marketing by identifying customers most likely to subcribe. This helps banks to reduce:
+- unnecessary marketing contacts,
+- lower operating costs,
+- optimize resource allocation,
+- personalize customer engagement and
+- increase campaign ROI through targeted marketing strategies
+
+## 💰 Business Objectives 
 This project aims to:
 
-- Predict customers likely to subscribe
-- Reduce unnecessary marketing costs
-- Improve campaign targeting
-- Minimise missed revenue opportunities through cost-sensitive modelling
+- Increase campaign ROI by identifying customers with a subscription probability above 30%, aiming for conversion rates of 25–35%.
+- Improve marketing efficiency by allocating resources to high-value customer segments, reducing marketing costs by 20–30% while maintaining or improving subscription rates.
+- Reduce customer contact fatigue by cutting unnecessary marketing contacts by at least 40%, improving customer relationships and ensuring continued campaign effectiveness.
 
 
-## 🔧 Business Problem
+## 🔧 Business Question
 a) Customer Segmentation
 - Which demographic factors (age, job, marital status, education) and financial indicators
 (balance, default, housing, loan) most strongly predict subscription likelihood?
@@ -45,18 +53,33 @@ d) Reach–Precision Balance
 - What is the ideal trade-off between broad campaign reach and targeted precision to sustain customer trust and maximize long-term value?
 
 
-## 📊 Dataset
+## 📊 Dataset 
+### Dataset Overview
 
 - **Source:** Portuguese Bank Marketing Dataset (`bank-additional-full.csv`)
 - **Records:** 41,188 customer observations
-- **Features:** 20 input variables + 1 target variable
+- **Features:** 20 input variables + 1 target variable (
 - **Target Variable:** `y` (Term Deposit Subscription: Yes/No)
 - **Problem Type:** Binary Classification
 - **Class Distribution:** Highly imbalanced (~11% positive class)
 
-Data Wrangling and Cleaning
-- Converted 
+<div align="center">
 
+<img width="450" height="284" alt="Screenshot 2026-06-30 at 4 00 38 PM" src="https://github.com/user-attachments/assets/23b4f070-c3ca-44af-a1d7-941252913788" />
+
+</div>
+
+### 🧹 Dataset Cleaning
+#### 📋 Incomplete Data
+- Verified the dataset for missing values and confirmed that no incomplete records were present.
+- No imputation or row removal was required, allowing all observations to be retained for analysis.
+
+#### ✔️ Inaccurate and Duplicated Data
+- Removed duplicate records to maintain data integrity and prevent biased model training.
+- Identified and treated outliers using percentile capping (1st–99th percentile) and the IQR method to reduce the influence of extreme values while preserving overall data distribution.
+- Validated data types and categorical values to ensure consistency before feature encoding.
+
+### 🔍 Data Analysis
 ## Models Implemented
 Five machine learning models:
 - Decision Tree
